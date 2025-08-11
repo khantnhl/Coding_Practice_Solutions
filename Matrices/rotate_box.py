@@ -9,13 +9,11 @@ start collecting from bottom to top since 90deg rotated
 """
 
 def rotateTheBox(self, boxGrid: List[List[str]]) -> List[List[str]]:
-
     """
     [["#","#","*",".","*","."],
     ["#","#","#","*",".","."],
     ["#","#","#",".","#","."]]
                         i   c
-
     """
     ROWS, COLS = len(boxGrid), len(boxGrid[0])
 
