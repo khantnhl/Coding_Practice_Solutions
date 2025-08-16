@@ -1,6 +1,5 @@
 """
 """
-
 def findCheapestPrice(self, n: int, flights: List[List[int]], src: int, dst: int, k: int) -> int:
     
     """shortest path finder algorithm"""
@@ -16,7 +15,6 @@ def findCheapestPrice(self, n: int, flights: List[List[int]], src: int, dst: int
     prices = [float('inf')] * n
     prices[src] = 0
 
-    visited = set()
     queue = deque([(0, src, 0)]) # queue = [cost, city, total_stop]
 
     while(queue):
@@ -33,3 +31,4 @@ def findCheapestPrice(self, n: int, flights: List[List[int]], src: int, dst: int
                 queue.append((nextCost, neighbor, stops + 1))
 
     return prices[dest] if(prices[dest]!= float('inf')) else -1
+
