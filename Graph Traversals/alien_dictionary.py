@@ -25,6 +25,7 @@ def alienOrder(self, words: List[str]) -> str:
 
         # backtrack path
         visited[c] = True
+
         for neighbor in adjlist[c]:
             if(dfs(neighbor)):
                 return True
