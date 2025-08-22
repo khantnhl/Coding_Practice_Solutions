@@ -37,7 +37,6 @@ def topKFrequent(nums: List[int], k: int) -> List[int]:
 
     initialized to size of nums array to address max frequency 
     _freq = [ [], [], [], [], [], [], [] ]
-    
     """
 
     # bucket sort

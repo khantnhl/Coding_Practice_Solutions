@@ -13,7 +13,9 @@ def numBusesToDestination(self, routes: List[List[int]], source: int, target: in
         adjlist undirected graph for routes
         0:[1]
         1:[0]
-
+        
+        time : O(m + n^2)
+        space: O(m + n^2)
         """
         if(source == target):
             return 0

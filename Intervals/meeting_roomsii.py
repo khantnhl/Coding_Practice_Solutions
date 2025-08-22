@@ -23,6 +23,7 @@ def minMeetingRooms(self, intervals: List[Interval]) -> int:
     # 40 > 5
     # heap = 10
     # 10 < 15
+    
     for i in range(1, len(sorted_intervals)):
         # if end time bigger than or equal to start time
         if(minheap[0] >= sorted_intervals[i].start):

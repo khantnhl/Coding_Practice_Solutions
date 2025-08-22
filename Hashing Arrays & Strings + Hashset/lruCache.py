@@ -1,6 +1,16 @@
 """
 Summary: 
     use Hashmap and Doubly Linked List to handle priorities 
+    
+    get 
+        - if key already exists 
+        - remove and insert at right
+    put 
+        - if key already exists
+        - remove 
+        - create new Node
+        - insert 
+        - check capacity
 """
 class ListNode:
     def __init__(self, key, val):

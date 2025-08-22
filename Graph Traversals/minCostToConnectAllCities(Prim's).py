@@ -10,7 +10,6 @@ space: O(n)
 from typing import List
 import heapq
 def minCostConnectPoints(self, points: List[List[int]]) -> int:
-
     visited = set()
     minHeap = [(0, 0)]
     nodes = len(points)
